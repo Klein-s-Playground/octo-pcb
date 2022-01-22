@@ -548,17 +548,6 @@ F 3 "~" H 7950 2900 50  0001 C CNN
 	1    7950 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R14
-U 1 1 61FA90C6
-P 8100 2900
-F 0 "R14" V 8100 2800 50  0000 L CNN
-F 1 "10k" V 8050 3000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8030 2900 50  0001 C CNN
-F 3 "~" H 8100 2900 50  0001 C CNN
-	1    8100 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 3400 7500 3400
 Wire Wire Line
@@ -575,12 +564,6 @@ Wire Wire Line
 	7350 3700 7950 3700
 Wire Wire Line
 	7950 3700 7950 3050
-Wire Wire Line
-	7350 4100 8100 4100
-Wire Wire Line
-	8100 4100 8100 3050
-Wire Wire Line
-	8100 2750 8100 2650
 Wire Wire Line
 	6250 2650 6250 2750
 Wire Wire Line
@@ -602,9 +585,6 @@ Wire Wire Line
 	7800 2650 7950 2650
 Wire Wire Line
 	7950 2750 7950 2650
-Connection ~ 7950 2650
-Wire Wire Line
-	7950 2650 8100 2650
 Wire Wire Line
 	6750 3100 6750 2650
 Connection ~ 6750 2650
@@ -738,4 +718,270 @@ Text Label 2550 4050 0    50   ~ 0
 SCL
 Wire Wire Line
 	6250 3100 6250 3050
+$Comp
+L 74xx:74LS153 U2
+U 1 1 620B3014
+P 5550 6000
+F 0 "U2" H 5550 7181 50  0000 C CNN
+F 1 "74LS153" H 5550 7090 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5550 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS153" H 5550 6000 50  0001 C CNN
+	1    5550 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 620B8215
+P 5050 4850
+F 0 "C5" H 5165 4896 50  0000 L CNN
+F 1 "100nF" H 5165 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 4700 50  0001 C CNN
+F 3 "~" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 620BB2E9
+P 5050 5000
+F 0 "#PWR0112" H 5050 4750 50  0001 C CNN
+F 1 "GND" H 5055 4827 50  0000 C CNN
+F 2 "" H 5050 5000 50  0001 C CNN
+F 3 "" H 5050 5000 50  0001 C CNN
+	1    5050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 620BEC34
+P 5050 4650
+F 0 "#PWR0113" H 5050 4500 50  0001 C CNN
+F 1 "+3V3" H 5065 4823 50  0000 C CNN
+F 2 "" H 5050 4650 50  0001 C CNN
+F 3 "" H 5050 4650 50  0001 C CNN
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4650 5050 4700
+Wire Wire Line
+	5050 4650 5550 4650
+Wire Wire Line
+	5550 4650 5550 5000
+Connection ~ 5050 4650
+Text Label 6050 5300 0    50   ~ 0
+PM_A0
+Text Label 5050 6700 2    50   ~ 0
+A0
+Text Label 5050 6800 2    50   ~ 0
+A1
+$Comp
+L power:GND #PWR0114
+U 1 1 620DCC5A
+P 5550 7100
+F 0 "#PWR0114" H 5550 6850 50  0001 C CNN
+F 1 "GND" H 5555 6927 50  0000 C CNN
+F 2 "" H 5550 7100 50  0001 C CNN
+F 3 "" H 5550 7100 50  0001 C CNN
+	1    5550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 620DEB64
+P 5050 6500
+F 0 "#PWR0115" H 5050 6250 50  0001 C CNN
+F 1 "GND" H 5055 6327 50  0000 C CNN
+F 2 "" H 5050 6500 50  0001 C CNN
+F 3 "" H 5050 6500 50  0001 C CNN
+	1    5050 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 620DF3DD
+P 5050 5800
+F 0 "#PWR0116" H 5050 5550 50  0001 C CNN
+F 1 "GND" H 5055 5627 50  0000 C CNN
+F 2 "" H 5050 5800 50  0001 C CNN
+F 3 "" H 5050 5800 50  0001 C CNN
+	1    5050 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 620DFD6A
+P 5050 5300
+F 0 "#PWR0117" H 5050 5050 50  0001 C CNN
+F 1 "GND" H 5055 5127 50  0000 C CNN
+F 2 "" H 5050 5300 50  0001 C CNN
+F 3 "" H 5050 5300 50  0001 C CNN
+	1    5050 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0118
+U 1 1 620E0415
+P 5050 5400
+F 0 "#PWR0118" H 5050 5250 50  0001 C CNN
+F 1 "+3V3" V 5065 5528 50  0000 L CNN
+F 2 "" H 5050 5400 50  0001 C CNN
+F 3 "" H 5050 5400 50  0001 C CNN
+	1    5050 5400
+	0    -1   -1   0   
+$EndComp
+Text Label 5050 5500 2    50   ~ 0
+SDA
+Text Label 5050 5600 2    50   ~ 0
+SCL
+Text Label 5050 6000 2    50   ~ 0
+PM_PV
+Text Label 5050 6100 2    50   ~ 0
+PM_CRIT
+Text Label 5050 6200 2    50   ~ 0
+PM_WARN
+Text Label 5050 6300 2    50   ~ 0
+PM_TC
+$Comp
+L 74xx:74LS153 U3
+U 1 1 62121040
+P 3750 6000
+F 0 "U3" H 3750 7181 50  0000 C CNN
+F 1 "74LS153" H 3750 7090 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3750 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS153" H 3750 6000 50  0001 C CNN
+	1    3750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 62121046
+P 3250 4850
+F 0 "C6" H 3365 4896 50  0000 L CNN
+F 1 "100nF" H 3365 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 4700 50  0001 C CNN
+F 3 "~" H 3250 4850 50  0001 C CNN
+	1    3250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 6212104C
+P 3250 5000
+F 0 "#PWR0119" H 3250 4750 50  0001 C CNN
+F 1 "GND" H 3255 4827 50  0000 C CNN
+F 2 "" H 3250 5000 50  0001 C CNN
+F 3 "" H 3250 5000 50  0001 C CNN
+	1    3250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0120
+U 1 1 62121052
+P 3250 4650
+F 0 "#PWR0120" H 3250 4500 50  0001 C CNN
+F 1 "+3V3" H 3265 4823 50  0000 C CNN
+F 2 "" H 3250 4650 50  0001 C CNN
+F 3 "" H 3250 4650 50  0001 C CNN
+	1    3250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4650 3250 4700
+Wire Wire Line
+	3250 4650 3750 4650
+Wire Wire Line
+	3750 4650 3750 5000
+Connection ~ 3250 4650
+Text Label 3250 6700 2    50   ~ 0
+A0
+Text Label 3250 6800 2    50   ~ 0
+A1
+$Comp
+L power:GND #PWR0121
+U 1 1 6212105F
+P 3750 7100
+F 0 "#PWR0121" H 3750 6850 50  0001 C CNN
+F 1 "GND" H 3755 6927 50  0000 C CNN
+F 2 "" H 3750 7100 50  0001 C CNN
+F 3 "" H 3750 7100 50  0001 C CNN
+	1    3750 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 62121065
+P 3250 6500
+F 0 "#PWR0122" H 3250 6250 50  0001 C CNN
+F 1 "GND" H 3255 6327 50  0000 C CNN
+F 2 "" H 3250 6500 50  0001 C CNN
+F 3 "" H 3250 6500 50  0001 C CNN
+	1    3250 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 6212106B
+P 3250 5800
+F 0 "#PWR0123" H 3250 5550 50  0001 C CNN
+F 1 "GND" H 3255 5627 50  0000 C CNN
+F 2 "" H 3250 5800 50  0001 C CNN
+F 3 "" H 3250 5800 50  0001 C CNN
+	1    3250 5800
+	0    1    1    0   
+$EndComp
+Text Label 6050 6000 0    50   ~ 0
+PM_STAT
+Text Label 4250 5300 0    50   ~ 0
+D0
+Text Label 4250 6000 0    50   ~ 0
+D1
+Text Label 2550 4750 0    50   ~ 0
+SD0
+Text Label 2550 4850 0    50   ~ 0
+SD1
+Text Label 2550 4950 0    50   ~ 0
+SD2
+Text Label 2550 5050 0    50   ~ 0
+SD3
+Text Label 2550 5250 0    50   ~ 0
+SD4
+Text Label 2550 5350 0    50   ~ 0
+SD5
+Text Label 950  3750 2    50   ~ 0
+SD7
+Text Label 950  3950 2    50   ~ 0
+SD8
+Text Label 950  4050 2    50   ~ 0
+SD9
+Text Label 950  4150 2    50   ~ 0
+SD10
+Text Label 950  4350 2    50   ~ 0
+SD11
+Text Label 950  4450 2    50   ~ 0
+SD12
+Text Label 950  4550 2    50   ~ 0
+SD13
+Text Label 950  4750 2    50   ~ 0
+SD14
+Text Label 950  4850 2    50   ~ 0
+SD15
+Text Label 950  3650 2    50   ~ 0
+SD6
+Text Label 3250 5300 2    50   ~ 0
+SD0
+Text Label 3250 5400 2    50   ~ 0
+SD1
+Text Label 3250 5500 2    50   ~ 0
+SD2
+Text Label 3250 5600 2    50   ~ 0
+SD3
+Text Label 3250 6000 2    50   ~ 0
+SD4
+Text Label 3250 6100 2    50   ~ 0
+SD5
+Text Label 3250 6300 2    50   ~ 0
+SD7
+Text Label 3250 6200 2    50   ~ 0
+SD6
 $EndSCHEMATC
