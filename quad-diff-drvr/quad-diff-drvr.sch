@@ -129,17 +129,11 @@ F 3 "" H 3700 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 850  3700 950 
-Wire Wire Line
-	10750 650  10350 650 
-Text Label 10350 650  0    50   ~ 0
+Text Label 10750 650  2    50   ~ 0
 VA
-Wire Wire Line
-	10750 850  10350 850 
-Text Label 10350 850  0    50   ~ 0
+Text Label 10750 850  2    50   ~ 0
 D0+
-Wire Wire Line
-	10750 950  10350 950 
-Text Label 10350 950  0    50   ~ 0
+Text Label 10750 950  2    50   ~ 0
 D0-
 $Comp
 L Connector_Generic:Conn_01x04 J4
@@ -163,17 +157,11 @@ F 3 "" H 10750 1300 50  0001 C CNN
 	1    10750 1300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10750 1200 10350 1200
-Text Label 10350 1200 0    50   ~ 0
+Text Label 10750 1200 2    50   ~ 0
 VA
-Wire Wire Line
-	10750 1400 10350 1400
-Text Label 10350 1400 0    50   ~ 0
+Text Label 10750 1400 2    50   ~ 0
 D1+
-Wire Wire Line
-	10750 1500 10350 1500
-Text Label 10350 1500 0    50   ~ 0
+Text Label 10750 1500 2    50   ~ 0
 D1-
 $Comp
 L Connector_Generic:Conn_01x04 J5
@@ -197,17 +185,11 @@ F 3 "" H 10750 1850 50  0001 C CNN
 	1    10750 1850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10750 1750 10350 1750
-Text Label 10350 1750 0    50   ~ 0
+Text Label 10750 1750 2    50   ~ 0
 VB
-Wire Wire Line
-	10750 1950 10350 1950
-Text Label 10350 1950 0    50   ~ 0
+Text Label 10750 1950 2    50   ~ 0
 D2+
-Wire Wire Line
-	10750 2050 10350 2050
-Text Label 10350 2050 0    50   ~ 0
+Text Label 10750 2050 2    50   ~ 0
 D2-
 $Comp
 L Connector_Generic:Conn_01x04 J6
@@ -231,17 +213,11 @@ F 3 "" H 10750 2400 50  0001 C CNN
 	1    10750 2400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10750 2300 10350 2300
-Text Label 10350 2300 0    50   ~ 0
+Text Label 10750 2300 2    50   ~ 0
 VB
-Wire Wire Line
-	10750 2500 10350 2500
-Text Label 10350 2500 0    50   ~ 0
+Text Label 10750 2500 2    50   ~ 0
 D3+
-Wire Wire Line
-	10750 2600 10350 2600
-Text Label 10350 2600 0    50   ~ 0
+Text Label 10750 2600 2    50   ~ 0
 D3-
 $Comp
 L Device:R R1
@@ -1361,4 +1337,126 @@ Wire Wire Line
 Connection ~ 9600 5100
 Text Label 9700 5100 0    50   ~ 0
 A1
+$Comp
+L Interface:LTC1688 U6
+U 1 1 61ED37CD
+P 9150 2250
+F 0 "U6" H 9500 3100 50  0000 C CNN
+F 1 "LTC1688" H 8950 3100 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 10150 1400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/16889fa.pdf" H 9150 2150 50  0001 C CNN
+	1    9150 2250
+	1    0    0    -1  
+$EndComp
+Text Label 8800 5300 0    50   ~ 0
+DEN
+Text Label 8650 2350 2    50   ~ 0
+DEN
+Text Label 9650 1550 0    50   ~ 0
+D1+
+Text Label 9650 1750 0    50   ~ 0
+D1-
+Text Label 9650 1850 0    50   ~ 0
+D0+
+Text Label 9650 2050 0    50   ~ 0
+D0-
+Text Label 9650 2450 0    50   ~ 0
+D2+
+Text Label 9650 2650 0    50   ~ 0
+D2-
+Text Label 9650 2750 0    50   ~ 0
+D3+
+Text Label 9650 2950 0    50   ~ 0
+D3-
+$Comp
+L power:GND #PWR0136
+U 1 1 61F139AF
+P 9250 3150
+F 0 "#PWR0136" H 9250 2900 50  0001 C CNN
+F 1 "GND" V 9255 3022 50  0000 R CNN
+F 2 "" H 9250 3150 50  0001 C CNN
+F 3 "" H 9250 3150 50  0001 C CNN
+	1    9250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 61F13FCA
+P 8650 2150
+F 0 "#PWR0137" H 8650 1900 50  0001 C CNN
+F 1 "GND" V 8655 2022 50  0000 R CNN
+F 2 "" H 8650 2150 50  0001 C CNN
+F 3 "" H 8650 2150 50  0001 C CNN
+	1    8650 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 61F15C69
+P 8500 1150
+F 0 "C9" H 8615 1196 50  0000 L CNN
+F 1 "100nF" H 8615 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8538 1000 50  0001 C CNN
+F 3 "~" H 8500 1150 50  0001 C CNN
+	1    8500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 61F164E1
+P 8500 1300
+F 0 "#PWR0138" H 8500 1050 50  0001 C CNN
+F 1 "GND" H 8505 1127 50  0000 C CNN
+F 2 "" H 8500 1300 50  0001 C CNN
+F 3 "" H 8500 1300 50  0001 C CNN
+	1    8500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1350 9250 900 
+Wire Wire Line
+	9250 900  8500 900 
+Wire Wire Line
+	8500 900  8500 1000
+$Comp
+L power:+5V #PWR0139
+U 1 1 61F35BF0
+P 8500 850
+F 0 "#PWR0139" H 8500 700 50  0001 C CNN
+F 1 "+5V" H 8515 1023 50  0000 C CNN
+F 2 "" H 8500 850 50  0001 C CNN
+F 3 "" H 8500 850 50  0001 C CNN
+	1    8500 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 850  8500 900 
+Connection ~ 8500 900 
+Text Label 8650 1650 2    50   ~ 0
+D1
+Text Label 8650 1950 2    50   ~ 0
+D0
+Text Label 8650 2550 2    50   ~ 0
+D2
+Text Label 8650 2850 2    50   ~ 0
+D3
+$Comp
+L Device:R R22
+U 1 1 61F5B30A
+P 8250 1100
+F 0 "R22" V 8250 1000 50  0000 L CNN
+F 1 "10k" V 8200 1200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 1100 50  0001 C CNN
+F 3 "~" H 8250 1100 50  0001 C CNN
+	1    8250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 900  8250 900 
+Wire Wire Line
+	8250 900  8250 950 
+Wire Wire Line
+	8650 2350 8250 2350
+Wire Wire Line
+	8250 2350 8250 1250
 $EndSCHEMATC
