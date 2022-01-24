@@ -131,9 +131,9 @@ Wire Wire Line
 	3700 850  3700 950 
 Text Label 10750 650  2    50   ~ 0
 VA
-Text Label 10750 850  2    50   ~ 0
-D0+
 Text Label 10750 950  2    50   ~ 0
+D0+
+Text Label 10750 850  2    50   ~ 0
 D0-
 $Comp
 L Connector_Generic:Conn_01x04 J4
@@ -159,9 +159,9 @@ F 3 "" H 10750 1300 50  0001 C CNN
 $EndComp
 Text Label 10750 1200 2    50   ~ 0
 VA
-Text Label 10750 1400 2    50   ~ 0
-D1+
 Text Label 10750 1500 2    50   ~ 0
+D1+
+Text Label 10750 1400 2    50   ~ 0
 D1-
 $Comp
 L Connector_Generic:Conn_01x04 J5
@@ -187,9 +187,9 @@ F 3 "" H 10750 1850 50  0001 C CNN
 $EndComp
 Text Label 10750 1750 2    50   ~ 0
 VB
-Text Label 10750 1950 2    50   ~ 0
-D2+
 Text Label 10750 2050 2    50   ~ 0
+D2+
+Text Label 10750 1950 2    50   ~ 0
 D2-
 $Comp
 L Connector_Generic:Conn_01x04 J6
@@ -215,9 +215,9 @@ F 3 "" H 10750 2400 50  0001 C CNN
 $EndComp
 Text Label 10750 2300 2    50   ~ 0
 VB
-Text Label 10750 2500 2    50   ~ 0
-D3+
 Text Label 10750 2600 2    50   ~ 0
+D3+
+Text Label 10750 2500 2    50   ~ 0
 D3-
 $Comp
 L Device:R R1
@@ -909,17 +909,17 @@ Text Label 750  3400 2    50   ~ 0
 SD15
 Text Label 750  2200 2    50   ~ 0
 SD6
-Text Label 3600 6600 2    50   ~ 0
+Text Label 1700 5800 2    50   ~ 0
 SD0
 Text Label 3600 6700 2    50   ~ 0
 SD1
-Text Label 1700 5800 2    50   ~ 0
+Text Label 3600 6600 2    50   ~ 0
 SD2
 Text Label 1700 5900 2    50   ~ 0
 SD3
-Text Label 1700 6600 2    50   ~ 0
+Text Label 1700 6000 2    50   ~ 0
 SD4
-Text Label 1700 6700 2    50   ~ 0
+Text Label 1700 5700 2    50   ~ 0
 SD5
 Text Label 3600 5800 2    50   ~ 0
 SD7
@@ -1017,13 +1017,13 @@ Text Label 2700 5700 0    50   ~ 0
 D2
 Text Label 2700 6400 0    50   ~ 0
 D3
-Text Label 1700 5700 2    50   ~ 0
+Text Label 1700 6700 2    50   ~ 0
 SD8
 Text Label 3600 5900 2    50   ~ 0
 SD9
 Text Label 3600 6000 2    50   ~ 0
 SD10
-Text Label 1700 6000 2    50   ~ 0
+Text Label 1700 6600 2    50   ~ 0
 SD11
 Text Label 1700 6400 2    50   ~ 0
 SD12
@@ -1352,21 +1352,21 @@ Text Label 8800 5300 0    50   ~ 0
 DEN
 Text Label 8650 2350 2    50   ~ 0
 DEN
-Text Label 9650 1550 0    50   ~ 0
-D1+
-Text Label 9650 1750 0    50   ~ 0
-D1-
 Text Label 9650 1850 0    50   ~ 0
-D0+
+D1+
 Text Label 9650 2050 0    50   ~ 0
+D1-
+Text Label 9650 1550 0    50   ~ 0
+D0+
+Text Label 9650 1750 0    50   ~ 0
 D0-
-Text Label 9650 2450 0    50   ~ 0
-D2+
-Text Label 9650 2650 0    50   ~ 0
-D2-
 Text Label 9650 2750 0    50   ~ 0
-D3+
+D2+
 Text Label 9650 2950 0    50   ~ 0
+D2-
+Text Label 9650 2450 0    50   ~ 0
+D3+
+Text Label 9650 2650 0    50   ~ 0
 D3-
 $Comp
 L power:GND #PWR0136
@@ -1432,13 +1432,13 @@ $EndComp
 Wire Wire Line
 	8500 850  8500 900 
 Connection ~ 8500 900 
-Text Label 8650 1650 2    50   ~ 0
-D1
 Text Label 8650 1950 2    50   ~ 0
+D1
+Text Label 8650 1650 2    50   ~ 0
 D0
-Text Label 8650 2550 2    50   ~ 0
-D2
 Text Label 8650 2850 2    50   ~ 0
+D2
+Text Label 8650 2550 2    50   ~ 0
 D3
 $Comp
 L Device:R R22
@@ -1459,4 +1459,16 @@ Wire Wire Line
 	8650 2350 8250 2350
 Wire Wire Line
 	8250 2350 8250 1250
+Text Label 5950 1700 0    50   ~ 0
+IN1+
+Text Label 5950 1800 0    50   ~ 0
+IN1-
+Text Label 5950 2000 0    50   ~ 0
+IN2+
+Text Label 5950 2100 0    50   ~ 0
+IN2-
+Text Label 5950 2300 0    50   ~ 0
+IN3+
+Text Label 5950 2400 0    50   ~ 0
+IN3-
 $EndSCHEMATC
