@@ -145,7 +145,7 @@ F 3 "" H 10650 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 10650 1250 2    50   ~ 0
-VA
+VA1
 Text Label 10650 1550 2    50   ~ 0
 D1+
 Text Label 10650 1450 2    50   ~ 0
