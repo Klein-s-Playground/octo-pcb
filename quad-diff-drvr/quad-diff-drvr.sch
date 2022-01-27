@@ -697,7 +697,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 5050 6400 5400
 Connection ~ 5900 5050
-Text Label 10050 5300 0    50   ~ 0
+Text Label 10050 5700 0    50   ~ 0
 PM_A0
 Text Label 5900 7100 2    50   ~ 0
 PM_A0
@@ -1116,9 +1116,9 @@ Text Label 9050 5800 2    50   ~ 0
 A0
 Text Label 9050 5900 2    50   ~ 0
 A1
-Text Label 10050 4400 0    50   ~ 0
+Text Label 10050 5300 0    50   ~ 0
 VEN0
-Text Label 10050 4500 0    50   ~ 0
+Text Label 10050 5400 0    50   ~ 0
 VEN1
 Text Label 10050 4600 0    50   ~ 0
 VEN2
@@ -1134,16 +1134,16 @@ Text Label 10050 5100 0    50   ~ 0
 M1_A1
 Text Label 6900 5700 0    50   ~ 0
 PM_ASEL
-Text Label 10050 5400 0    50   ~ 0
+Text Label 10050 5800 0    50   ~ 0
 PM_A1
-Text Label 10050 5500 0    50   ~ 0
+Text Label 10050 5900 0    50   ~ 0
 PM_STAT
 $Comp
 L Device:C C8
 U 1 1 621687EB
 P 8450 4350
-F 0 "C8" H 8565 4396 50  0000 L CNN
-F 1 "100nF" H 8565 4305 50  0000 L CNN
+F 0 "C8" V 8500 4400 50  0000 L CNN
+F 1 "100nF" V 8400 4400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 4200 50  0001 C CNN
 F 3 "~" H 8450 4350 50  0001 C CNN
 	1    8450 4350
@@ -1163,7 +1163,7 @@ $EndComp
 Wire Wire Line
 	8450 4150 8450 4200
 Wire Wire Line
-	8450 4150 9550 4150
+	8450 4150 8750 4150
 Connection ~ 8450 4150
 $Comp
 L power:GND #PWR0135
@@ -1258,23 +1258,23 @@ $EndComp
 $Comp
 L Device:R R20
 U 1 1 6221731B
-P 10500 5300
-F 0 "R20" V 10500 5200 50  0000 L CNN
-F 1 "10k" V 10450 5400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 5300 50  0001 C CNN
-F 3 "~" H 10500 5300 50  0001 C CNN
-	1    10500 5300
+P 10500 5700
+F 0 "R20" V 10500 5600 50  0000 L CNN
+F 1 "10k" V 10450 5800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 5700 50  0001 C CNN
+F 3 "~" H 10500 5700 50  0001 C CNN
+	1    10500 5700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R21
 U 1 1 6221779B
-P 10500 5400
-F 0 "R21" V 10500 5300 50  0000 L CNN
-F 1 "10k" V 10450 5500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 5400 50  0001 C CNN
-F 3 "~" H 10500 5400 50  0001 C CNN
-	1    10500 5400
+P 10500 5800
+F 0 "R21" V 10500 5700 50  0000 L CNN
+F 1 "10k" V 10450 5900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 5800 50  0001 C CNN
+F 3 "~" H 10500 5800 50  0001 C CNN
+	1    10500 5800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1282,23 +1282,23 @@ Wire Wire Line
 Wire Wire Line
 	10750 4800 10750 5000
 Wire Wire Line
-	10750 5300 10650 5300
+	10750 5700 10650 5700
 Wire Wire Line
 	10650 5000 10750 5000
 Connection ~ 10750 5000
 Wire Wire Line
-	10750 5000 10750 5300
+	10750 5000 10750 5700
 Wire Wire Line
 	10650 4900 10850 4900
 Wire Wire Line
 	10850 4900 10850 5100
 Wire Wire Line
-	10850 5400 10650 5400
+	10850 5800 10650 5800
 Wire Wire Line
 	10650 5100 10850 5100
 Connection ~ 10850 5100
 Wire Wire Line
-	10850 5100 10850 5400
+	10850 5100 10850 5800
 Wire Wire Line
 	10350 4800 10050 4800
 Wire Wire Line
@@ -1308,18 +1308,14 @@ Wire Wire Line
 Wire Wire Line
 	10350 5100 10050 5100
 Wire Wire Line
-	10350 5300 10050 5300
-Wire Wire Line
-	10350 5400 10050 5400
-Wire Wire Line
 	11000 4800 10750 4800
 Connection ~ 10750 4800
 Text Label 11000 4800 2    50   ~ 0
 A0
 Wire Wire Line
-	11050 5400 10850 5400
-Connection ~ 10850 5400
-Text Label 11050 5400 2    50   ~ 0
+	11050 5800 10850 5800
+Connection ~ 10850 5800
+Text Label 11050 5800 2    50   ~ 0
 A1
 $Comp
 L Interface:LTC1688 U6
@@ -1332,7 +1328,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/16889fa
 	1    1550 6500
 	1    0    0    -1  
 $EndComp
-Text Label 10050 5600 0    50   ~ 0
+Text Label 10050 6000 0    50   ~ 0
 DEN
 Text Label 1050 6600 2    50   ~ 0
 DEN
@@ -2142,4 +2138,32 @@ Wire Wire Line
 	10200 3150 10200 2950
 Wire Wire Line
 	10200 2950 10100 2950
+Text Label 9050 4700 2    50   ~ 0
+INTn
+$Comp
+L Device:R R27
+U 1 1 6231E652
+P 8750 4500
+F 0 "R27" V 8750 4400 50  0000 L CNN
+F 1 "10k" V 8800 4250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8680 4500 50  0001 C CNN
+F 3 "~" H 8750 4500 50  0001 C CNN
+	1    8750 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 4700 8750 4700
+Wire Wire Line
+	8750 4700 8750 4650
+Wire Wire Line
+	8750 4350 8750 4150
+Connection ~ 8750 4150
+Wire Wire Line
+	8750 4150 9550 4150
+Text Label 850  3650 2    50   ~ 0
+INTn
+Wire Wire Line
+	10350 5700 10050 5700
+Wire Wire Line
+	10350 5800 10050 5800
 $EndSCHEMATC
