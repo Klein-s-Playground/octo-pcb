@@ -9,6 +9,10 @@
  - max 30A all channels per HAT, 15A per VA / VB on a HAT
  - Should cost around $16 in parts ([BoM](https://docs.google.com/spreadsheets/d/1N1vn6LuwAwEPZ860a-0pwzuY52BjjF7snLwd1W7JV2M/edit?usp=sharing)) + $2.5 per PCB ([DirtyPCB](https://dirtypcbs.com/store/pcbs/about)) at quantity
 
+See Turnkey PCB Quote from [MacroFab](https://factory.macrofab.com/pcb/g5n1ef7/1/design)
+ - 10 PCBAs
+ - $1k total for $100 / ea.
+ - Est. ship date Mar. 8
 
 <img src="img/qdd_3d.png"  alt="quad-diff-driver_3d" width = 640px  >
 
